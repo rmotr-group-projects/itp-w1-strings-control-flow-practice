@@ -1,6 +1,10 @@
 def all_in_string(a_string, s1, s2, s3):
-    pass
-
+    # assign each boolean to a variable
+    a = s1 in a_string
+    b = s2 in a_string
+    c = s3 in a_string
+    # convert each variable value to an integer and add them up. 
+    return int(a) + int(b) + int(c)        
 
 def test_only_one_in_string():
     assert all_in_string('abcd', 'a', 'X', 'Y') == 1
