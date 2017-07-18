@@ -1,7 +1,26 @@
 def positions(a_string, first_word, second_word, third_word):
-    pass
-
-
+    
+    index1 = a_string.find(first_word)
+    index2 = a_string.find(second_word)
+    index3 = a_string.find(third_word)
+    
+    #if the word is not found, replace with - 
+    if index1 == -1:
+        index1 = "-"
+    if index2 == -1:
+        index2 = "-"
+    if index3 == -1:
+        index3 = "-"
+    
+    # return (str(index1) + "," + str(index2) + "," + str(index3))
+    ## up to here
+    
+    
+    return "{},{},{}".format(index1,index2,index3)
+    
+   
+   
+   
 def test_three_occurrences():
     # Positions:
     #         0                         26      34
