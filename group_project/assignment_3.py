@@ -1,5 +1,8 @@
 def replace_bad_words(a_string, word_to_replace, new_word):
-    pass
+    if word_to_replace in a_string:
+        return a_string.replace(word_to_replace, new_word)
+    else:
+        return a_string
 
 
 def test_replace_occurrences():

@@ -1,16 +1,17 @@
 # Example. Use it as a base to build your own template.
 BOARD_TEMPLATE = """
-O  |  O  |  X
+{A}  |  {B}  |  {C}
 --------------
-X  |  X  |  O
+{D}  |  {E}  |  {F}
 --------------
-O  |  X  |  O
+{G}  |  {H}  |  {I}
 """
 
 
-def format_tic_tac_toe_board(first_row, second_row, third_row):
-    pass
 
+def format_tic_tac_toe_board(first_row, second_row, third_row):
+    new_board = BOARD_TEMPLATE.format(A = first_row[0],B=first_row[1], C = first_row[2], D = second_row[0],E = second_row[1], F = second_row[2], G = third_row[0], H = third_row[1], I = third_row[2])
+    return new_board
 
 def test_format_board():
     """

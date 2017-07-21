@@ -1,5 +1,15 @@
 def positions(a_string, first_word, second_word, third_word):
-    pass
+    index_first_word = str(a_string.find(first_word))
+    print ('first', index_first_word)
+    index_second_word = str(a_string.find(second_word))
+    print('second', index_second_word)
+    index_third_word = str(a_string.find(third_word))
+    print('third', index_third_word)
+    index_list = [index_first_word,index_second_word,index_third_word]
+    print('list', index_list)
+    S = ','.join(index_list)
+    S = S.replace('-1','-')
+    return S
 
 
 def test_three_occurrences():
