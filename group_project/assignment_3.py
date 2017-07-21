@@ -1,5 +1,9 @@
 def replace_bad_words(a_string, word_to_replace, new_word):
-    pass
+    return a_string.replace(word_to_replace,new_word)
+
+original = "Ruby is a great language! Yay Ruby!"
+print (replace_bad_words(original, "Ruby", "Python"))
+print (replace_bad_words("Hello World", "Ruby", "Python"))
 
 
 def test_replace_occurrences():
