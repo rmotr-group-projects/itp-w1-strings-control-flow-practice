@@ -1,7 +1,17 @@
 def all_in_string(a_string, s1, s2, s3):
-    pass
+    if s1 in a_string and s2 in a_string and s3 in a_string:
+        return 3
+    elif s1 in a_string and s2 in a_string or s2 in a_string and s3 in a_string or s1 in a_string and s3 in a_string:
+        return 2
+    elif s1 in a_string or s2 in a_string or s3 in a_string:
+        return 1
+    else:
+        return 0
 
+print(all_in_string('abcd', 'a', 'X', 'Y'))
+            
 
+     
 def test_only_one_in_string():
     assert all_in_string('abcd', 'a', 'X', 'Y') == 1
     assert all_in_string('abcd', 'X', 'a', 'Y') == 1
