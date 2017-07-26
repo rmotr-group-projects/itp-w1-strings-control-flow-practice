@@ -13,9 +13,9 @@ def format_tic_tac_toe_board(first_row, second_row, third_row):
     new_first_row = char.join(first_row[i:i+1] for i in range(0, len(first_row)))
     new_second_row = char.join(second_row[i:i+1] for i in range(0, len(second_row)))
     new_third_row = char.join(third_row[i:i+1] for i in range(0, len(third_row)))
-    new_board = new_first_row + "\n" + lines_row + \
+    new_board = "\n" + new_first_row + "\n" + lines_row + \
                 "\n" + new_second_row + "\n" + lines_row + \
-                "\n" + new_third_row
+                "\n" + new_third_row + "\n"
     return new_board
     
 # For troubleshooting and testing purposes
