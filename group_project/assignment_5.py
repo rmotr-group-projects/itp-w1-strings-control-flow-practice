@@ -1,5 +1,11 @@
-def positions(a_string, first_word, second_word, third_word):
-    pass
+def positions(a_string, *args):
+    index = []
+    for arg in args:
+        if arg in a_string:
+            index.append(str(a_string.index(arg)))
+        else:
+            index.append('-')
+    return ','.join(index)
 
 
 def test_three_occurrences():
