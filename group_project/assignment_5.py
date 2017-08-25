@@ -2,10 +2,10 @@ def positions(a_string, *args):
     index = []
     for arg in args:
         if arg in a_string:
-            index.append(str(a_string.index(arg)))
+            index.append(a_string.index(arg))
         else:
             index.append('-')
-    return ','.join(index)
+    return '{},{},{}'.format(index[0], index[1], index[2])
 
 
 def test_three_occurrences():
