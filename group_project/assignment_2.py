@@ -1,5 +1,14 @@
 def all_in_string(a_string, s1, s2, s3):
-    pass
+    char_count = 0
+    for char in a_string:
+        if char == s1:
+            char_count += 1
+        elif char == s2:
+            char_count += 1
+        elif char == s3:
+            char_count += 1
+    return char_count
+            
 
 
 def test_only_one_in_string():
