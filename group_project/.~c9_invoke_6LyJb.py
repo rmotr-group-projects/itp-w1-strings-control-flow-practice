@@ -13,7 +13,7 @@ def format_tic_tac_toe_board(first_row, second_row, third_row):
     start = '"""\n'
     end = '"""'
     
-    row_one =   '\n0  |  1  |  2\n'
+    row_one =   '0  |  1  |  2\n'
     row_two =   '3  |  4  |  5\n'
     row_three = '6  |  7  |  8\n'
     line_break = '--------------\n'
@@ -30,12 +30,13 @@ def format_tic_tac_toe_board(first_row, second_row, third_row):
     row_three = row_three.replace('7', third_row[1])
     row_three = row_three.replace('8', third_row[2])
     
-    tictactoe = row_one + line_break + row_two + line_break + row_three
+    tictactoe = row_one + line_break + row_two + line_break +
+                row_three
                 
     return tictactoe
 
 
-def test_format_board():
+    return tictactoe
     """
     This is the board used in this test:
 

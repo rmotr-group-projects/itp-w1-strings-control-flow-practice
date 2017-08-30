@@ -1,7 +1,11 @@
 def all_in_string(a_string, s1, s2, s3):
-    pass
-
-
+    str_count = 0
+    
+    while a_string[str_count] in (s1, s2, s3):        
+        str_count += 1
+        
+    return str_count
+        
 def test_only_one_in_string():
     assert all_in_string('abcd', 'a', 'X', 'Y') == 1
     assert all_in_string('abcd', 'X', 'a', 'Y') == 1
