@@ -9,9 +9,14 @@ O  |  X  |  O
 
 
 def format_tic_tac_toe_board(first_row, second_row, third_row):
-    pass
-
-
+    the_vertical_split = '  |  '
+    the_horizontal_split = '-'* 14 +'\n'
+    board = '\n'
+    all_rows = (first_row, second_row, third_row)
+    board += the_horizontal_split.join([the_vertical_split.join(rows)+ '\n' for rows in all_rows])
+  
+    return board
+    
 def test_format_board():
     """
     This is the board used in this test:

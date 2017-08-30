@@ -1,7 +1,16 @@
 def positions(a_string, first_word, second_word, third_word):
-    pass
-
-
+    tup_of_words = (first_word, second_word, third_word)
+    list_of_positions =[]
+    word_position = ','
+    for search_word in tup_of_words:
+        if search_word in a_string.replace('.', '').split(" "):
+            list_of_positions.append(str(a_string.find(search_word)))
+        
+        else:
+            list_of_positions.append('-')
+    
+    return word_position.join(list_of_positions)
+    
 def test_three_occurrences():
     # Positions:
     #         0                         26      34
