@@ -1,6 +1,13 @@
 def positions(a_string, first_word, second_word, third_word):
-    pass
-
+    first_find = a_string.find(first_word)
+    second_find = a_string.find(second_word)
+    third_find = a_string.find(third_word)
+    all_togeather =str(first_find) + "," + str(second_find) + ','+ str(third_find)
+    str_all_tog = (str(all_togeather))
+    corected_str = str_all_tog.replace('-1','-')
+    
+    return corected_str
+ 
 
 def test_three_occurrences():
     # Positions:
