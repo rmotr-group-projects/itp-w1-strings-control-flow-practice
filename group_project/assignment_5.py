@@ -1,5 +1,13 @@
 def positions(a_string, first_word, second_word, third_word):
-    pass
+    word_list = [first_word, second_word, third_word]
+    pos_list = []
+    for word in word_list:
+        pos = a_string.find(word)
+        if pos == -1:
+            pos_list.append('-')
+        else:
+            pos_list.append(str(pos))
+    return ",".join(pos_list)
 
 
 def test_three_occurrences():
