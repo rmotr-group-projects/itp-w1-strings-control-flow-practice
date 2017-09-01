@@ -1,5 +1,25 @@
 def positions(a_string, first_word, second_word, third_word):
-    pass
+    if first_word in a_string:
+        first_word_loc = a_string.find(first_word)
+    else:    
+        first_word_loc = '-'
+    
+    if second_word in a_string:
+        second_word_loc = a_string.find(second_word)
+    else:
+        second_word_loc = '-'
+    
+    if third_word in a_string:
+        third_word_loc = a_string.find(third_word)
+    else:
+        third_word_loc = '-'
+    
+    response = str(first_word_loc) + ',' + str(second_word_loc) + ',' + str(third_word_loc)
+    return response
+    
+print(positions('The Jax is back and youre gonna be in trouble.', 'Jax', 'two', 'trouble'))
+
+
 
 
 def test_three_occurrences():
