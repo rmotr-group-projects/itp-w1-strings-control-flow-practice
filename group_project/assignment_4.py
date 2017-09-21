@@ -1,6 +1,6 @@
 def how_many_times(a_string, a_word):
-    pass
-
+    
+    return a_string.count(a_word)
 
 def test_more_than_once():
     phrase = "Python is a great language. I like Python a lot."
