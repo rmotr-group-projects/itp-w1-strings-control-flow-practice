@@ -1,5 +1,12 @@
 def all_in_string(a_string, s1, s2, s3):
-    pass
+    strings = [s1, s2, s3]
+    x = 0
+    for item in strings:
+        if item in a_string:
+            x = x+1
+    return x
+    
+print(all_in_string('dov', 'v', 'o', 'd'))
 
 
 def test_only_one_in_string():
