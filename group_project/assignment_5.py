@@ -1,5 +1,6 @@
 def positions(a_string, first_word, second_word, third_word):
-    pass
+    answer = str(a_string.find(first_word)) + "," + str(a_string.find(second_word)) + "," + str(a_string.find(third_word))
+    return answer.replace("-1", "-")
 
 
 def test_three_occurrences():
