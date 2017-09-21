@@ -1,5 +1,8 @@
 def all_in_string(a_string, s1, s2, s3):
-    pass
+    count_string1 = list(a_string).count(s1) 
+    count_string2 = list(a_string).count(s2)
+    count_string3 = list(a_string).count(s3)
+    return(count_string1 + count_string2 + count_string3)
 
 
 def test_only_one_in_string():
