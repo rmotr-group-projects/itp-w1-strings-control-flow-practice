@@ -12,7 +12,7 @@ install:
   - pip install -r dev-requirements.txt
 
 script:
-  - "py.test -v --tb=short group_projects"
+  - "py.test -v --tb=short group_project"
 
 notifications:
   webhooks:
