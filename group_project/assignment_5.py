@@ -1,6 +1,21 @@
 def positions(a_string, first_word, second_word, third_word):
-    pass
-
+    if a_string.find(first_word) > -1:
+        first_num = a_string.find(first_word)
+    else: 
+        first_num = "-"
+    
+    if a_string.find(second_word) > -1:
+        second_num = a_string.find(second_word)
+    else: 
+        second_num = "-" 
+    
+    if a_string.find(third_word) > -1:
+        third_num = a_string.find(third_word)
+    else: 
+        third_num = "-"
+   
+    total = str(first_num)+","+ str(second_num) +"," + str(third_num) 
+    return total
 
 def test_three_occurrences():
     # Positions:
