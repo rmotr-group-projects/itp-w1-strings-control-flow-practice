@@ -2,6 +2,16 @@ def all_in_string(a_string, s1, s2, s3):
     pass
 
 
+
+
+
+
+
+# RMOTR Test Cases below 
+#
+#
+
+
 def test_only_one_in_string():
     assert all_in_string('abcd', 'a', 'X', 'Y') == 1
     assert all_in_string('abcd', 'X', 'a', 'Y') == 1
