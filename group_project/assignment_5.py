@@ -1,6 +1,8 @@
 def positions(a_string, first_word, second_word, third_word):
-    pass
-
+    start_index_1 = a_string.find(first_word)
+    start_index_2 = a_string.find(second_word)
+    start_index_3 = a_string.find(third_word)
+    print(start_index_1, start_index_2, start_index_3 )
 
 def test_three_occurrences():
     # Positions:
