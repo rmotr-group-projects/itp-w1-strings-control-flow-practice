@@ -12,8 +12,7 @@ def format_tic_tac_toe_board(first_row, second_row, third_row):
     row_1 = first_row
     row_2 = second_row
     row_3 = third_row
-
-    print("\n\t",row_1[0], "|", row_1[1], "|", row_1[2])
+    print ("\n\t",row_1[0], "|", row_1[1], "|", row_1[2])
     print("\t", "---------")
     print("\t", row_2[0], "|", row_2[1], "|", row_2[2])
     print("\t", "---------")
