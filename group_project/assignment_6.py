@@ -19,27 +19,14 @@ def format_tic_tac_toe_board(first_row, second_row, third_row):
     print("\t", row_3[0], "|", row_3[1], "|", row_3[2], "\n")
 
 
-
-first_row = 'XOX'
-second_row = 'OXO'
-third_row = 'OOX'
-testcode = format_tic_tac_toe_board(first_row,second_row,third_row)
-print(testcode)
-
-
-
-
-
 def test_format_board():
     """
     This is the board used in this test:
-
         X  |  O  |  X
         --------------
         O  |  X  |  O
         --------------
         O  |  O  |  X
-
     """
     first_row = 'XOX'
     second_row = 'OXO'
