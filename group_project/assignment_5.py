@@ -1,20 +1,25 @@
 def positions(a_string, first_word, second_word, third_word):
-    start_index_1 = a_string.find(first_word)
-    print(start_index_1)
-
-    start_index_2 = a_string.find(second_word)
-    print(start_index_2)
-
-    start_index_3 = a_string.find(third_word)
-    print(start_index_3)
-
-    return start_index_1, start_index_2, start_index_3
-
+    index1 = a_string.find(first_word)
+    if index1 != -1:
+        a = index1
+    else:
+        a = '-'
+    index2 = a_string.find(second_word)
+    if index2 != -1:
+        b = index2
+    else:
+        b = '-'
+    index3 = a_string.find(third_word)
+    if index3 != -1:
+        c = index3
+    else:
+        c = '-'
+    print("({},{},{})".format(a, b, c))
 
 a_string = "Python is good. Python is Wise. I like Python"
 first_word = 'Python'
 second_word = 'Wise'
-third_word = 'like'
+third_word = 'Ruby'
 
 testcode = positions(a_string, first_word, second_word, third_word)
 print(testcode)
