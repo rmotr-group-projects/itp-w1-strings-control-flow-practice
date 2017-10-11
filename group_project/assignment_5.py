@@ -1,6 +1,23 @@
-def positions(a_string, first_word, second_word, third_word):
-    pass
+phrase = "Python is good. Python is Wise. I like Python"
 
+def positions(a_string, first_word, second_word, third_word):
+    first_found = a_string.find(first_word)
+    if first_found < 0:
+        first_found = '-'
+    second_found = a_string.find(second_word)
+    if second_found < 0:
+        second_found = '-'
+    third_found = a_string.find(third_word)
+    if third_found < 0:
+        third_found = '-'
+    return str(first_found) + ',' + str(second_found) + ',' + str(third_found)
+
+print(positions(phrase, 'Python', 'Wise', 'like'))
+print(positions(phrase, 'Python', 'Wise', 'Ruby'))
+print(positions(phrase, 'Ruby', 'Wise', 'like'))
+print(positions(phrase, 'Python', 'Javascript', 'Ruby'))
+print(positions(phrase, 'Javscript', 'like', 'Ruby'))
+print(positions(phrase, 'Javscript', 'Ruby', 'Wise'))
 
 def test_three_occurrences():
     # Positions:
