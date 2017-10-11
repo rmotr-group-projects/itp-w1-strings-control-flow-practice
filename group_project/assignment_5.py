@@ -14,7 +14,7 @@ def positions(a_string, first_word, second_word, third_word):
         c = index3
     else:
         c = '-'
-    print("({},{},{})".format(a, b, c))
+    return "{},{},{}".format(a, b, c)
 
 a_string = "Python is good. Python is Wise. I like Python"
 first_word = 'Python'
