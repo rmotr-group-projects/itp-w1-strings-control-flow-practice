@@ -1,5 +1,15 @@
 def all_in_string(a_string, s1, s2, s3):
-    pass
+    count = 0
+    for i in range (0, len(a_string)):
+        if s1 in a_string[i]:
+            count =+ 1
+        elif s2 in a_string[i]:
+            count += 1
+        elif s3 in a_string[i]:
+            count += 1
+        else: 
+            count += 0
+    return count
 
 
 def test_only_one_in_string():
