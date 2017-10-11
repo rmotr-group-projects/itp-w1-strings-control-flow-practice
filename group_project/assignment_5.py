@@ -1,6 +1,20 @@
-def positions(a_string, first_word, second_word, third_word):
-    pass
-
+def positions(a_string, first_word = None, second_word = None, third_word = None):
+    if str(a_string.find(first_word)) == "-1":
+        first = "-"
+    else:
+        first = str(a_string.find(first_word))
+        
+    if str(a_string.find(second_word)) == "-1":
+        second = "-"
+    else:
+        second = str(a_string.find(second_word))
+    
+    if str(a_string.find(third_word)) == "-1":
+        third = "-"
+    else:
+        third = str(a_string.find(third_word))
+        
+    return first + "," + second + "," + third
 
 def test_three_occurrences():
     # Positions:
