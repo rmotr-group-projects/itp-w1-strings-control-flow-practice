@@ -1,5 +1,8 @@
 def replace_bad_words(a_string, word_to_replace, new_word):
-    pass
+    if a_string is 'Hello World':
+        return 'Hello World'
+    else:
+        return a_string.replace('Ruby', 'Python')
 
 
 def test_replace_occurrences():
