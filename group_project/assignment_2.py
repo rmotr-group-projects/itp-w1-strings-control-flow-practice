@@ -1,6 +1,14 @@
 def all_in_string(a_string, s1, s2, s3):
-    pass
-
+    if s1 in a_string:
+        a = 1
+    else: a = 0
+    if s2 in a_string:
+        b = 1
+    else: b = 0
+    if s3 in a_string:
+        c = 1
+    else: c = 0
+    return a + b + c
 
 def test_only_one_in_string():
     assert all_in_string('abcd', 'a', 'X', 'Y') == 1

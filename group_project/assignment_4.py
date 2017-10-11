@@ -1,5 +1,6 @@
 def how_many_times(a_string, a_word):
-    pass
+    sentence = a_string
+    return sentence.count(a_word)
 
 
 def test_more_than_once():

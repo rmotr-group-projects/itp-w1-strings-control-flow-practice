@@ -9,7 +9,17 @@ O  |  X  |  O
 
 
 def format_tic_tac_toe_board(first_row, second_row, third_row):
-    pass
+    first = first_row
+    second = second_row
+    third = third_row
+    board = """
+{}  |  {}  |  {}
+--------------
+{}  |  {}  |  {}
+--------------
+{}  |  {}  |  {}
+""".format(first[0], first[1], first[2], second[0], second[1], second[2], third[0], third[1], third[2])
+    return board
 
 
 def test_format_board():
