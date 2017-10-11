@@ -1,5 +1,13 @@
 def all_in_string(a_string, s1, s2, s3):
-    pass
+    found = 0
+    if a_string.find(s1) != -1:
+        found = found + 1
+    if a_string.find(s2) != -1:
+        found = found + 1
+    if a_string.find(s3) != -1:
+        found = found + 1
+    return found
+        
 
 
 def test_only_one_in_string():
