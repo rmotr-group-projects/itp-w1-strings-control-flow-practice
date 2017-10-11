@@ -1,5 +1,28 @@
 def positions(a_string, first_word, second_word, third_word):
-    pass
+    index1 = a_string.find(first_word)
+    if index1 != -1:
+        a = index1
+    else:
+        a = '-'
+    index2 = a_string.find(second_word)
+    if index2 != -1:
+        b = index2
+    else:
+        b = '-'
+    index3 = a_string.find(third_word)
+    if index3 != -1:
+        c = index3
+    else:
+        c = '-'
+    return "{},{},{}".format(a, b, c)
+
+a_string = "Python is good. Python is Wise. I like Python"
+first_word = 'Python'
+second_word = 'Wise'
+third_word = 'Ruby'
+
+testcode = positions(a_string, first_word, second_word, third_word)
+print(testcode)
 
 
 def test_three_occurrences():

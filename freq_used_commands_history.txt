@@ -1,0 +1,79 @@
+    1  uname -a
+    2  ifconfig -a
+    3  pwd
+    4  pip install -R dev-requirements.txt 
+    5  pip install -r dev-requirements.txt 
+    6  python -v
+    7  python --version
+    8  mkvirtualenv stringcontrolproject
+    9  workon stringcontrolproject
+   10  pip install -r dev-requirements.txt 
+   11  workon stringcontrolproject
+   12  history
+   13  python group_project/assignment_1.py 
+   14  pwd
+   15  ls 
+   16  ls -al
+   17  python group_project/assignment_1.py 
+   18  python --version
+   19  deactivate
+   20  workon stringcontrolproject
+   21  git commit group_project/*
+   22  git commit group_project -R updated assignment_1
+   23  git commit -a  group_project -r updated assignment_1
+   24  git commit -a  group_project 
+   25  git commit -a group_project/ 
+   26  git commit  group_project/ 
+   27  git push group_project/
+   28  exit
+   29  workon stringcontrolproject
+   30  git commit group_project/
+   31  git init
+   32  git push 
+   33  git pull 
+   34  p
+   35  workon stringcontrolproject
+   36  pytest group_project/assignment_2.py 
+   37  pytest group_project/assignment_1.py 
+   38  pytest group_project/assignment_2.py 
+   39  pytest group_project/assignment_3.py 
+   40  git commit -m "completed assignment 3
+   41  "
+   42  git commit -m "completed assignment 3
+   43  "
+   44  workon stringcontrolproject
+   45  python
+   46  git pull origin 
+   47  git pull origin -r
+   48  git pull origin 
+   49  git commit -m "saving local changes
+   50  "
+   51  git commit -m "saving local changes"
+   52  ?
+   53  help
+   54  exit
+   55  workon
+   56  workon stringcontrolproject
+   57  make test
+   58  pytest -s group_project/assignment_5.py 
+   59  cls
+   60  cleae
+   61  clear
+   62  pytest -s group_project/assignment_1.py 
+   63  pytest -s group_project/assignment_2.py 
+   64  pytest -s group_project/assignment_3.py 
+   65  pytest -s group_project/assignment_4.py 
+   66  pytest -s group_project/assignment_5.py 
+   67  pytest -s group_project/assignment_6.py 
+   68  make test
+   69  clear
+   70  make test
+   71  pip install -r dev-requirements.txt 
+   72  pip --upgrade -r dev-requirements.txt 
+   73  pip --upgrade 
+   74  pip -u -r dev-requirements.txt 
+   75  clear
+   76  history
+   77  cat history >> freq_used_commands_history.txt
+   78  cat history >> ./freq_used_commands_history.txt
+   79  history >> ./freq_used_commands_history.txt
