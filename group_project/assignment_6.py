@@ -1,16 +1,21 @@
-# Example. Use it as a base to build your own template.
+
 BOARD_TEMPLATE = """
-O  |  O  |  X
+{0}  |  {1}  |  {2}
 --------------
-X  |  X  |  O
+{3}  |  {4}  |  {5}
 --------------
-O  |  X  |  O
+{6}  |  {7}  |  {8}
 """
 
-
+   
+    
 def format_tic_tac_toe_board(first_row, second_row, third_row):
-    pass
+    r1 = list(first_row)
+    r2 = list(second_row)
+    r3 = list(third_row)    
 
+    return(BOARD_TEMPLATE.format(r1[0], r1[1], r1[2], r2[0], r2[1], r2[2], r3[0], r3[1], r3[2]))
+    
 
 def test_format_board():
     """

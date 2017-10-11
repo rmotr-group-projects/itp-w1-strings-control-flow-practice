@@ -1,5 +1,18 @@
 def positions(a_string, first_word, second_word, third_word):
-    pass
+    if first_word in a_string:
+        location1 = a_string.find(first_word)
+    else: location1 = '-'    
+    
+    if second_word in a_string:
+        location2 = a_string.find(second_word)
+    else: location2 = '-'        
+    
+    if third_word in a_string:
+        location3 = a_string.find(third_word)
+    else: location3 = '-'    
+    
+    return('{0},{1},{2}'.format(location1, location2, location3))
+    
 
 
 def test_three_occurrences():
