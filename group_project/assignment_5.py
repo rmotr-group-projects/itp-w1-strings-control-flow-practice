@@ -13,7 +13,6 @@ def positions(a_string, first_word, second_word, third_word):
         z=  a_string.find(third_word)
     return ('{},{},{}'.format(x,y,z))
 
-print positions("Python is good. Python is Wise. I like Python",'Python', 'Javascript', 'Ruby')
 
 def test_three_occurrences():
     # Positions:
