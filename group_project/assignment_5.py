@@ -8,7 +8,6 @@ def positions(a_string, first_word, second_word, third_word):
         second_pos = '-'
     if first_pos == -1:
         first_pos = '-'
-    print (first_pos), (second_pos), (third_pos)
     return str(first_pos) + ',' + str(second_pos) + ',' + str(third_pos)
 
 def test_three_occurrences():

@@ -5,8 +5,8 @@ def replace_bad_words(a_string, word_to_replace, new_word):
     replace = find_word + word_length
     if find_word != -1:
         a_string = a_string.replace(word_to_replace, new_word)
-        print a_string
-        return a_string
+        print (a_string)
+        return (a_string)
     return a_string
 
 

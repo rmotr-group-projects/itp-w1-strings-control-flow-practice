@@ -3,7 +3,7 @@ def first_half(a_string):
     if len(a_string) % 2 == 0:
         print a_string[:ret_string]
         return a_string[:ret_string]
-    print a_string[:ret_string]
+    print (a_string[:ret_string])
     return a_string[:(ret_string + 1)] 
     
 
