@@ -1,5 +1,17 @@
 def positions(a_string, first_word, second_word, third_word):
-    pass
+    if first_word in a_string and second_word in a_string and third_word in a_string: 
+        return a_string.find(first_word), a_string.find(second_word), a_string.find(third_word)
+    elif first_word in a_string and second_word in a_string and third_word not in a_string:
+        return a_string.find(first_word), a_string.find(second_word),'-'
+    elif first_word not in a_string and second_word in a_string and third_word in a_string:
+        return ,a_string.find(second_word), a_string.find(third_word)
+    elif first_word in a_string and second_word not in a_string and third_word not in a_string:
+        return a_string.find(first_word), ,
+    elif first_word not in a_string and second_word in a_string and third_word not in a_string:
+        return ,a_string.find(second_word),
+    elif first_word not in a_string and second_word not in a_string and third_word in a_string:
+        return , , a_string.find(third_word)
+    
 
 
 def test_three_occurrences():

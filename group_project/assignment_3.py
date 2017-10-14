@@ -1,7 +1,10 @@
 def replace_bad_words(a_string, word_to_replace, new_word):
-    pass
-
-
+    if word_to_replace in a_string:
+        a_string = a_string.replace(word_to_replace, new_word)
+        return a_string
+    return a_string
+    
+    
 def test_replace_occurrences():
     original = "Ruby is a great language! Yay Ruby!"
     expected = "Python is a great language! Yay Python!"
