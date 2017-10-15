@@ -1,0 +1,113 @@
+[1mdiff --git a/group_project/assignment_1.py b/group_project/assignment_1.py[m
+[1mindex 9a9ef1a..596bd52 100644[m
+[1m--- a/group_project/assignment_1.py[m
+[1m+++ b/group_project/assignment_1.py[m
+[36m@@ -1,5 +1,8 @@[m
+ def first_half(a_string):[m
+[31m-    pass[m
+[32m+[m[32m    if len(a_string) % 2 == 0:[m
+[32m+[m[32m        return a_string[0:len(a_string)/2][m
+[32m+[m[32m    else:[m
+[32m+[m[32m        return a_string[0:(len(a_string) +1)/2][m
+ [m
+ [m
+ def test_first_half_with_even_length_string():[m
+[1mdiff --git a/group_project/assignment_2.py b/group_project/assignment_2.py[m
+[1mindex e993bc3..ec34dc9 100644[m
+[1m--- a/group_project/assignment_2.py[m
+[1m+++ b/group_project/assignment_2.py[m
+[36m@@ -1,5 +1,12 @@[m
+ def all_in_string(a_string, s1, s2, s3):[m
+[31m-    pass[m
+[32m+[m[32m    count = 0[m
+[32m+[m[32m    if s1 in a_string:[m
+[32m+[m[32m        count += 1[m
+[32m+[m[32m    if s2 in a_string:[m
+[32m+[m[32m        count += 1[m
+[32m+[m[32m    if s3 in a_string:[m
+[32m+[m[32m        count += 1[m
+[32m+[m[32m    return count[m
+ [m
+ [m
+ def test_only_one_in_string():[m
+[1mdiff --git a/group_project/assignment_3.py b/group_project/assignment_3.py[m
+[1mindex 91619b8..38d72c4 100644[m
+[1m--- a/group_project/assignment_3.py[m
+[1m+++ b/group_project/assignment_3.py[m
+[36m@@ -1,5 +1,8 @@[m
+ def replace_bad_words(a_string, word_to_replace, new_word):[m
+[31m-    pass[m
+[32m+[m[32m    if a_string is 'Hello World':[m
+[32m+[m[32m        return 'Hello World'[m
+[32m+[m[32m    else:[m
+[32m+[m[32m        return a_string.replace('Ruby', 'Python')[m
+ [m
+ [m
+ def test_replace_occurrences():[m
+[1mdiff --git a/group_project/assignment_4.py b/group_project/assignment_4.py[m
+[1mindex 92672f0..5aa60ca 100644[m
+[1m--- a/group_project/assignment_4.py[m
+[1m+++ b/group_project/assignment_4.py[m
+[36m@@ -1,5 +1,5 @@[m
+ def how_many_times(a_string, a_word):[m
+[31m-    pass[m
+[32m+[m[32m    return a_string.count(a_word)[m
+ [m
+ [m
+ def test_more_than_once():[m
+[1mdiff --git a/group_project/assignment_5.py b/group_project/assignment_5.py[m
+[1mindex 941a4d2..fe48a95 100644[m
+[1m--- a/group_project/assignment_5.py[m
+[1m+++ b/group_project/assignment_5.py[m
+[36m@@ -1,5 +1,23 @@[m
+ def positions(a_string, first_word, second_word, third_word):[m
+[31m-    pass[m
+[32m+[m[32m    result = ''[m
+[32m+[m[32m    if first_word in a_string:[m
+[32m+[m[32m        result += str(a_string.index(first_word))[m
+[32m+[m[32m    else:[m
+[32m+[m[32m        result += '-'[m
+[32m+[m[32m    result += ','[m
+[32m+[m[41m    [m
+[32m+[m[32m    if second_word in a_string:[m
+[32m+[m[32m        result += str(a_string.index(second_word))[m
+[32m+[m[32m    else:[m
+[32m+[m[32m        result += '-'[m
+[32m+[m[32m    result += ','[m
+[32m+[m[41m    [m
+[32m+[m[32m    if third_word in a_string:[m
+[32m+[m[32m        result += str(a_string.index(third_word))[m
+[32m+[m[32m    else:[m
+[32m+[m[32m        result += '-'[m
+[32m+[m[41m    [m
+[32m+[m[32m    return result[m
+ [m
+ [m
+ def test_three_occurrences():[m
+[1mdiff --git a/group_project/assignment_6.py b/group_project/assignment_6.py[m
+[1mindex 10127af..4167f71 100644[m
+[1m--- a/group_project/assignment_6.py[m
+[1m+++ b/group_project/assignment_6.py[m
+[36m@@ -7,9 +7,21 @@[m [mX  |  X  |  O[m
+ O  |  X  |  O[m
+ """[m
+ [m
+[32m+[m[32mBOARD_TEMPLATE = """[m
+[32m+[m[32m{0}  |  {1}  |  {2}[m
+[32m+[m[32m--------------[m
+[32m+[m[32m{3}  |  {4}  |  {5}[m
+[32m+[m[32m--------------[m
+[32m+[m[32m{6}  |  {7}  |  {8}[m
+[32m+[m[32m"""[m
+[32m+[m
+ [m
+ def format_tic_tac_toe_board(first_row, second_row, third_row):[m
+[31m-    pass[m
+[32m+[m[32m    return BOARD_TEMPLATE.format([m
+[32m+[m[32m        first_row[0], first_row[1], first_row[2],[m
+[32m+[m[32m        second_row[0], second_row[1], second_row[2],[m
+[32m+[m[32m        third_row[0], third_row[1], third_row[2],[m
+[32m+[m[32m    )[m
+ [m
+ [m
+ def test_format_board():[m
