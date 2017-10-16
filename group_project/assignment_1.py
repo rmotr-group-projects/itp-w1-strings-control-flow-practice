@@ -1,5 +1,11 @@
 def first_half(a_string):
-    pass
+    if len(a_string) % 2 == 0:
+        return (a_string[0:int(len(a_string)/2)])
+    else:
+        return (a_string[0:int(len(a_string)/2)+1])
+
+print (first_half('drakes1234'))
+print (first_half('drakes1'))
 
 
 def test_first_half_with_even_length_string():
