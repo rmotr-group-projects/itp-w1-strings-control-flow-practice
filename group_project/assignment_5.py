@@ -1,5 +1,23 @@
 def positions(a_string, first_word, second_word, third_word):
-    pass
+    check = ''
+    if first_word in a_string:
+        check += str(a_string.index(first_word))
+    else:
+        check += '-'
+    check += ','
+    
+    if second_word in a_string:
+        check += str(a_string.index(second_word))
+    else:
+        check += '-'
+    check += ','
+    
+    if third_word in a_string:
+        check += str(a_string.index(third_word))
+    else:
+        check += '-'
+    
+    return check
 
 
 def test_three_occurrences():
