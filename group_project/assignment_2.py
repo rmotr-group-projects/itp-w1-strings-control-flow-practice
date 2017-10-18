@@ -1,13 +1,14 @@
-def all_in_string(a_string, s1, s2, s3):
-    if s1 and s2 and s3 in a_string:
-        return 3
-    elif s1 and s2 or s3 in a_string:
-        return 2
-    elif s1 or s2 and s3 in a_string:
-        return 2
-    elif s1 or s2 or s3 in a_string:
-        return 1
 
+def all_in_string(a_string, s1, s2, s3):
+    sum = 0
+    if s1 in a_string:
+        sum = sum + 1
+    if s2 in a_string:
+        sum = sum + 1
+    if s3 in a_string:
+        sum = sum + 1
+    return sum
+        
 def test_only_one_in_string():
     assert all_in_string('abcd', 'a', 'X', 'Y') == 1
     assert all_in_string('abcd', 'X', 'a', 'Y') == 1
