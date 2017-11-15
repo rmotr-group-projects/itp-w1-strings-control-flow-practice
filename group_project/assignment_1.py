@@ -1,5 +1,5 @@
 def first_half(a_string):
-    pass
+    return a_string[:3]
 
 
 def test_first_half_with_even_length_string():
