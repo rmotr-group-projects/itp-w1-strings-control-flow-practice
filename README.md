@@ -2,8 +2,9 @@
 
 This project consists of small assignment functions to work in groups and practice control flow and strings methods. It'll also be useful to introduce you to our Github workflow.
 
-Video Guide to setup your workspace: https://www.youtube.com/watch?v=6ExH9zCSoLE
-Step By Step guide to setup your workspace: https://gist.github.com/santiagobasulto/44fb495c804f728964ba328a4e6fbcaf
+## Workspace setup guides
+
+**[Video Guide](https://www.youtube.com/watch?v=6ExH9zCSoLE) | [Step by Step text guide](https://gist.github.com/santiagobasulto/44fb495c804f728964ba328a4e6fbcaf)**
 
 ## How to run tests
 
