@@ -1,13 +1,15 @@
-
 def replace_bad_words(a_string, word_to_replace, new_word):
     find_word = a_string.find(word_to_replace)
     word_length = len(word_to_replace)
     replace = find_word + word_length
-    if find_word != -1:
-        a_string = a_string.replace(word_to_replace, new_word)
-        print (a_string)
-        return (a_string)
+    while find_word != -1:
+        a_string = a_string[0:find_word] + new_word + a_string[replace:]
+        find_word = a_string.find(word_to_replace)
+        replace = find_word + word_length
     return a_string
+
+original = "Ruby is a great language! Yay Ruby!"
+print (replace_bad_words(original, "Ruby", "Python"))
 
 
 def test_replace_occurrences():
