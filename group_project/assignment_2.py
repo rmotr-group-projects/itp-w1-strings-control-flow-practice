@@ -1,5 +1,19 @@
 def all_in_string(a_string, s1, s2, s3):
-    pass
+    
+    count = 0
+    if s1 in a_string:
+        count += 1
+
+    if s2 in a_string:
+        count += 1
+
+    if s3 in a_string:
+        count += 1
+        
+    else:
+        count == 0
+
+    return count
 
 
 def test_only_one_in_string():
@@ -16,3 +30,6 @@ def test_two_in_string():
 
 def test_three_in_string():
     assert all_in_string('abcd', 'a', 'b', 'c') == 3
+    
+def test_none_in_string():
+    assert all_in_string('xvyq', 'a', 'b', 'c') == 0
