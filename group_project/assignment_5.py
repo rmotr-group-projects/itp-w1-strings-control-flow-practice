@@ -1,5 +1,17 @@
 def positions(a_string, first_word, second_word, third_word):
-    pass
+    if a_string.find(first_word) == -1:
+        x= "-"
+    else:
+        x=  a_string.find(first_word)
+    if a_string.find(second_word) == -1:
+        y= "-"
+    else:
+        y=  a_string.find(second_word)
+    if a_string.find(third_word) == -1:
+        z= "-"
+    else:
+        z=  a_string.find(third_word)
+    return ('{},{},{}'.format(x,y,z))
 
 
 def test_three_occurrences():
